@@ -352,8 +352,26 @@ def main():
         4. Click "Generate UGC Content"
         5. Wait for the AI to complete all steps
         6. Download your results!
+
+        ### 🎬 Example Workflow Output
+        Here's an example of what the workflow generates:
         """
         )
+
+        # Example workflow output section
+        example_video_path = "./example_generation.mp4"
+        if os.path.exists(example_video_path):
+            st.divider()
+            st.subheader("🎬 Example Workflow Output")
+            st.markdown("Here's an example of what the workflow generates:")
+
+            try:
+                video_file = open(example_video_path, "rb")
+                video_bytes = video_file.read()
+                st.video(video_bytes)
+                video_file.close()
+            except Exception as e:
+                st.warning(f"Could not display example video: {str(e)}")
 
 
 if __name__ == "__main__":
