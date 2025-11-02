@@ -100,7 +100,7 @@ def generate_video(script_lines, first_frame_path, gemini_client, output_dir="."
     operation = gemini_client.models.generate_videos(
         model="veo-3.1-generate-preview",
         video=generated_video_first_half.video,
-        prompt=second_half_prompt,
+        prompt="The creator smoothly finishes their tiktok reciew of the product by a recommendation to try it out",
         config=types.GenerateVideosConfig(
             number_of_videos=1, resolution="720p", aspect_ratio="9:16"
         ),
