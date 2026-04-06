@@ -2,7 +2,8 @@
 
 **The video below is entirely fake. No product was purchased. No person exists. No camera was ever turned on. It was generated in under 3 minutes.**
 
-https://github.com/user-attachments/assets/example_generation.mp4
+
+https://github.com/user-attachments/assets/3f4c8d0f-502b-493c-be14-21d507a1694d
 
 That's the point.
 
